@@ -1,20 +1,8 @@
-
-using UnityEngine;
-
 namespace Sweeper.Tile.States
 {
-    public class IState : MonoBehaviour
+    public interface IState
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
+        void LeftClick();
+        void RightClick();        
     }
 }
