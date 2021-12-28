@@ -2,18 +2,10 @@ using UnityEngine;
 
 namespace Sweeper.Tile.States
 {
-    public class NumberState : MonoBehaviour
+    public class NumberState : BaseState
     {
-        // Start is called before the first frame update
-        void Start()
+        public NumberState(GameTile gameTile, SpriteRenderer spriteRenderer, TileSprites tileSprites) : base(gameTile, spriteRenderer, tileSprites)
         {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
         }
     }
 }

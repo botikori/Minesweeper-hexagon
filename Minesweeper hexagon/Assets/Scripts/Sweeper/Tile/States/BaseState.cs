@@ -18,9 +18,21 @@ namespace Sweeper.Tile.States
             this.tileSprites = tileSprites;
         }
 
+        public virtual void RightClick()
+        {
+            if (!isRevealed)
+            {
+                Reveal();
+                return;
+            }
+        }
+
+        public virtual void Reveal()
+        {
+        }
+
         public virtual void LeftClick()
         {
-            //TODO set right sprites
             if (!isRevealed)
             {
                 if (!isFlagged && !isQuestioned)
@@ -55,11 +67,6 @@ namespace Sweeper.Tile.States
         {
             isQuestioned = false;
             spriteRenderer.sprite = tileSprites.UnrevealedQuestion;
-        }
-
-        public virtual void RightClick()
-        {
-
         }
     }
 }

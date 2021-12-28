@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Sweeper.Tile;
 
@@ -28,9 +29,26 @@ namespace Sweeper
                 for (int x = 0; x < width; x++)
                 {
                     GameBoard[x, y] = CreateTile(x, y);
-                    
                 }
             }
+        }
+
+        public GameTile[] GetNeighbours(int x, int y)
+        {
+            List<GameTile> tiles = new List<GameTile>();
+
+            for (int i = -1; i <= 1; i++)
+            {
+                for (int j = -1; j <= 1; j++)
+                {
+                    if (i != 0 && j != 0)
+                    {
+                        tiles.Add(GameBoard[x + i, y + j]);  
+                    }
+                }
+            }
+            
+            return tiles.ToArray();
         }
 
         private Vector3 CalculateCenter()

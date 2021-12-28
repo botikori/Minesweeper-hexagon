@@ -4,18 +4,10 @@ using UnityEngine;
 
 namespace Sweeper.Tile.States
 {
-    public class MineState : MonoBehaviour
+    public class MineState : BaseState
     {
-        // Start is called before the first frame update
-        void Start()
+        public MineState(GameTile gameTile, SpriteRenderer spriteRenderer, TileSprites tileSprites) : base(gameTile, spriteRenderer, tileSprites)
         {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
         }
     }
 }
