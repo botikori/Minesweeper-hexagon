@@ -2,18 +2,20 @@ using UnityEngine;
 
 namespace Sweeper.Tile.States
 {
-    public class BaseState : IState
+    public abstract class BaseState : IState
     {
         protected GameTile gameTile;
         protected bool isFlagged = false;
         protected bool isQuestioned = false;
         protected bool isRevealed = false;
         protected SpriteRenderer spriteRenderer;
+        protected TileSprites tileSprites;
 
-        public BaseState(GameTile gameTile, SpriteRenderer spriteRenderer)
+        public BaseState(GameTile gameTile, SpriteRenderer spriteRenderer, TileSprites tileSprites)
         {
             this.gameTile = gameTile;
             this.spriteRenderer = spriteRenderer;
+            this.tileSprites = tileSprites;
         }
 
         public virtual void LeftClick()
@@ -23,23 +25,41 @@ namespace Sweeper.Tile.States
             {
                 if (!isFlagged && !isQuestioned)
                 {
-                    isFlagged = true;
+                    FlagCell();
                 }
                 else if (isFlagged)
                 {
-                    isFlagged = false;
-                    isQuestioned = true;
+                    QuestionCell();
                 }
                 else
                 {
-                    isQuestioned = false;
+                    RemoveQuestion();
                 }
             }
         }
 
+        private void FlagCell()
+        {
+            isFlagged = true;
+            spriteRenderer.sprite = tileSprites.UnrevealedFlag;
+        }
+
+        private void QuestionCell()
+        {
+            isFlagged = false;
+            isQuestioned = true;
+            spriteRenderer.sprite = tileSprites.UnrevealedQuestion;
+        }
+
+        private void RemoveQuestion()
+        {
+            isQuestioned = false;
+            spriteRenderer.sprite = tileSprites.UnrevealedQuestion;
+        }
+
         public virtual void RightClick()
         {
-            
+
         }
     }
 }
