@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Sweeper.Tile.States;
 
@@ -10,12 +11,12 @@ namespace Sweeper.Tile
         public EmptyState EmptyState { get; set; }
         public MineState MineState { get; set; }
         public NumberState NumberState { get; set; }
+        
+        public int Row { get; set; }
+        public int Col { get; set; }
 
         private SpriteRenderer _spriteRenderer;
         private TileSprites _tileSprites;
-
-        public int Row { get; set; }
-        public int Col { get; set; }
 
         private void Awake()
         {
@@ -30,6 +31,11 @@ namespace Sweeper.Tile
         private void Start()
         {
             SetState(EmptyState);
+        }
+
+        private void OnMouseDown()
+        {
+            CurrentState.LeftClick();
         }
 
         public void SetState(IState newState)

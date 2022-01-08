@@ -66,7 +66,7 @@ namespace Sweeper.Tile.States
         private void RemoveQuestion()
         {
             isQuestioned = false;
-            spriteRenderer.sprite = tileSprites.UnrevealedQuestion;
+            spriteRenderer.sprite = tileSprites.Unrevealed;
         }
     }
 }
