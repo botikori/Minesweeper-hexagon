@@ -9,7 +9,11 @@
         <e p="Scripts" t="Include">
           <e p="Boards" t="Include">
             <e p="BaseBoard.cs" t="Include" />
+            <e p="DownTriangleBoard.cs" t="Include" />
             <e p="HexagonBoard.cs" t="Include" />
+            <e p="RectangleBoard.cs" t="Include" />
+            <e p="RhombusBoard.cs" t="Include" />
+            <e p="UpTriangleBoard.cs" t="Include" />
           </e>
           <e p="Tile" t="Include">
             <e p="GameTile.cs" t="Include" />

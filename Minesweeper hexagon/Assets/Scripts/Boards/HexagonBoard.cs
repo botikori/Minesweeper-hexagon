@@ -1,24 +1,22 @@
 using UnityEngine;
 
-namespace Sweeper
+namespace Sweeper.Boards
 {
     public class HexagonBoard : BaseBoard
     {
-        private int N
-        {
-            get { return Mathf.FloorToInt(RowCount / 2.0f); }
-        }
-
         public override int GetColumnInRow(int row)
         {
-            return 2 * N + 1 - Mathf.Abs(N - row);
-            //return RowCount;
+            return 2 * HalfRowCount + 1 - Mathf.Abs(HalfRowCount - row);
         }
 
         public override int GetFirstColumnInRow(int row)
         {
-            return N - row <= 0 ? 0 : N - row;
-            //return 0;
+            return HalfRowCount - row <= 0 ? 0 : HalfRowCount - row;
+        }
+        
+        private int HalfRowCount
+        {
+            get { return Mathf.FloorToInt(RowCount / 2.0f); }
         }
     }
 }
