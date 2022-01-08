@@ -1,11 +1,60 @@
+using System;
 using System.Collections.Generic;
-using UnityEngine;
 using Sweeper.Tile;
+using UnityEngine;
 
 namespace Sweeper
 {
-    public class Board : MonoBehaviour
+    public abstract class BaseBoard : MonoBehaviour
     {
+        public Dictionary<int, GameTile[]> GameBoard { get; private set; }
+        
+        [SerializeField] private GameTile gameTile;
+        protected readonly int RowCount = 10;
+
+        public abstract int GetColumnInRow(int row);
+        public abstract int GetFirstColumnInRow(int row);
+
+        private void Start()
+        {
+            CreateBoard();
+        }
+
+        public void CreateBoard()
+        {
+            Debug.Log("board creation");
+            for (int y = 0; y < RowCount; y++)
+            {
+                int columnCount = GetColumnInRow(RowCount);
+                GameTile[] column = new GameTile[columnCount];
+
+                for (int x = 0; x < columnCount; x++)
+                {
+                    column[x] = CreateTile(y + GetFirstColumnInRow(x), x);
+                }
+                
+                GameBoard.Add(y, column);
+            }
+        }
+        
+        private GameTile CreateTile(int x, int y)
+        {
+            GameTile tile = Instantiate(gameTile, CalculateHexPosition(x, y),
+                Quaternion.identity, transform);
+            tile.Row = y;
+            tile.Col = x;
+            return tile;
+        }
+
+        private Vector3 CalculateHexPosition(int x, int y)
+        {
+            float R = Mathf.Cos(30.0f * Mathf.Deg2Rad);
+            return new Vector3((x * R) + (y * R / 2), y * (3.0f/4.0f), 0);
+        }
+
+        #region OldCode
+
+        /*
         public GameTile[,] GameBoard { get; set; }
 
         [SerializeField] private int width = 6;
@@ -71,6 +120,8 @@ namespace Sweeper
             Debug.Log(3 / 4);
             float R = Mathf.Cos(30 * Mathf.Deg2Rad);
             return new Vector3((x * R) + (y * R / 2), y * (3.0f/4.0f), 0);
-        }
+        }*/
+
+        #endregion
     }
 }

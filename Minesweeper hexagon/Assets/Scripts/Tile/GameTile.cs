@@ -5,7 +5,7 @@ namespace Sweeper.Tile
 {
     public class GameTile : MonoBehaviour
     {
-        public IState currentState { get; private set; }
+        public IState CurrentState { get; private set; }
 
         public EmptyState EmptyState { get; set; }
         public MineState MineState { get; set; }
@@ -13,6 +13,9 @@ namespace Sweeper.Tile
 
         private SpriteRenderer _spriteRenderer;
         private TileSprites _tileSprites;
+
+        public int Row { get; set; }
+        public int Col { get; set; }
 
         private void Awake()
         {
@@ -33,7 +36,7 @@ namespace Sweeper.Tile
         {
             if (newState != null)
             {
-                currentState = newState;
+                CurrentState = newState;
             }
         }
     }
