@@ -1,8 +1,6 @@
-using UnityEngine;
-
-namespace Sweeper.Boards
+namespace Sweeper.Boards.ConcreteStrategies
 {
-    public class DownTriangleBoard : BaseBoard
+    public class DownTriangleBoardStrategy : BoardStrategy
     {
         public override int GetColumnInRow(int row)
         {

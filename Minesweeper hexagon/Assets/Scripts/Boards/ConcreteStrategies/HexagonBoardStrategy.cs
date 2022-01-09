@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace Sweeper.Boards
+namespace Sweeper.Boards.ConcreteStrategies
 {
-    public class HexagonBoard : BaseBoard
+    public class HexagonBoardStrategy : BoardStrategy
     {
         public override int GetColumnInRow(int row)
         {

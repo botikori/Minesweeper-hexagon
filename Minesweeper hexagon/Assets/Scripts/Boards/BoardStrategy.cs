@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Sweeper.Boards
 {
-    public abstract class BaseBoard : MonoBehaviour
+    public abstract class BoardStrategy : MonoBehaviour
     {
         public Dictionary<int, GameTile[]> GameBoard { get; private set; }
         
@@ -45,7 +45,7 @@ namespace Sweeper.Boards
         {
             GameTile[] centerTiles = GameBoard.FirstOrDefault(x => x.Key == Mathf.FloorToInt(GameBoard.Count / 2.0f)).Value;
             GameTile centerTile = centerTiles[Mathf.FloorToInt(centerTiles.Length / 2.0f)];
-
+            centerTile.GetComponentInChildren<SpriteRenderer>().color = Color.green;
             return new Vector3(centerTile.transform.position.x, centerTile.transform.position.y, -10);
         }
 

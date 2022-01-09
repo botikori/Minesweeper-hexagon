@@ -8,12 +8,16 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Boards" t="Include">
-            <e p="BaseBoard.cs" t="Include" />
-            <e p="DownTriangleBoard.cs" t="Include" />
-            <e p="HexagonBoard.cs" t="Include" />
-            <e p="RectangleBoard.cs" t="Include" />
-            <e p="RhombusBoard.cs" t="Include" />
-            <e p="UpTriangleBoard.cs" t="Include" />
+            <e p="BoardStrategy.cs" t="Include" />
+            <e p="ConcreteStrategies" t="Include">
+              <e p="DownTriangleBoardStrategy.cs" t="Include" />
+              <e p="HexagonBoardStrategy.cs" t="Include" />
+              <e p="RectangleBoardStrategy.cs" t="Include" />
+              <e p="RhombusBoardStrategy.cs" t="Include" />
+              <e p="UpTriangleBoardStrategy.cs" t="Include" />
+            </e>
+            <e p="Direction.cs" t="Include" />
+            <e p="MapCreator.cs" t="Include" />
           </e>
           <e p="Tile" t="Include">
             <e p="GameTile.cs" t="Include" />

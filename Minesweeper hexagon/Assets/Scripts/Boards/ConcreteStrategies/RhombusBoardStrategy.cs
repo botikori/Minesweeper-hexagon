@@ -1,10 +1,10 @@
-namespace Sweeper.Boards
+namespace Sweeper.Boards.ConcreteStrategies
 {
-    public class UpTriangleBoard : BaseBoard
+    public class RhombusBoardStrategy : BoardStrategy
     {
         public override int GetColumnInRow(int row)
         {
-            return RowCount - row;
+            return RowCount;
         }
 
         public override int GetFirstColumnInRow(int row)
