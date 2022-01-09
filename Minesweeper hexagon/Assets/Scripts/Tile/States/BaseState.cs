@@ -29,6 +29,7 @@ namespace Sweeper.Tile.States
 
         public virtual void Reveal()
         {
+            Debug.Log($"State {gameTile.CurrentState} Reveal at: {gameTile.Col}; {gameTile.Row}");
         }
 
         public virtual void LeftClick()

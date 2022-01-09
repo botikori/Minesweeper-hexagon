@@ -10,7 +10,7 @@ namespace Sweeper.Board
         private Dictionary<int, GameTile[]> _gameBoard;
         private GameTile _gameTile;
         
-        protected int RowCount = 11;
+        public int RowCount { get; private set; } = 11;
 
         protected abstract int GetColumnInRow(int row);
         protected abstract int GetFirstColumnInRow(int row);
@@ -67,11 +67,11 @@ namespace Sweeper.Board
 
         public GameTile GetCell(int x, int y)
         {
-            if (PositionExists(x, y)) return _gameBoard[y].ToList().Find(v => v.Col == x);
+            if (PositionExists(x, y)){ return _gameBoard[y].ToList().Find(v => v.Col == x);}
             return null;
         }
 
-        private bool PositionExists(int x, int y)
+        public bool PositionExists(int x, int y)
         {
             if (y >= 0 && y < _gameBoard.Count)
             {

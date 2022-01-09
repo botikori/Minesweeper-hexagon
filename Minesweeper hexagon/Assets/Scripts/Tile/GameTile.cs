@@ -6,7 +6,7 @@ namespace Sweeper.Tile
 {
     public class GameTile : MonoBehaviour
     {
-        public IState CurrentState { get; private set; }
+        public IState CurrentState { get; set; }
 
         public EmptyState EmptyState { get; set; }
         public MineState MineState { get; set; }
@@ -26,17 +26,13 @@ namespace Sweeper.Tile
             EmptyState = new EmptyState(this, _spriteRenderer, _tileSprites);
             MineState = new MineState(this, _spriteRenderer, _tileSprites);
             NumberState = new NumberState(this, _spriteRenderer, _tileSprites);
-        }
-
-        private void Start()
-        {
+            
             SetState(EmptyState);
-            GetComponentInChildren<TextMesh>().text = $"{Row}; {Col}";
         }
 
         private void OnMouseDown()
         {
-            CurrentState.LeftClick();
+            CurrentState.RightClick();
         }
 
         public void SetState(IState newState)
@@ -44,6 +40,7 @@ namespace Sweeper.Tile
             if (newState != null)
             {
                 CurrentState = newState;
+                Debug.Log(newState);
             }
         }
     }
