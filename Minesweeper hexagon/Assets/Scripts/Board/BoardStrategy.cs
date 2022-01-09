@@ -7,27 +7,24 @@ namespace Sweeper.Board
 {
     public abstract class BoardStrategy : MonoBehaviour
     {
-        public Dictionary<int, GameTile[]> GameBoard { get; private set; }
-
-        [SerializeField] private GameTile gameTile;
+        private Dictionary<int, GameTile[]> _gameBoard;
+        private GameTile _gameTile;
+        
         protected int RowCount = 11;
 
-        public abstract int GetColumnInRow(int row);
-        public abstract int GetFirstColumnInRow(int row);
+        protected abstract int GetColumnInRow(int row);
+        protected abstract int GetFirstColumnInRow(int row);
 
         private void Awake()
         {
-            GameBoard = new Dictionary<int, GameTile[]>();
+            _gameBoard = new Dictionary<int, GameTile[]>();
         }
 
-        private void Start()
+        public void CreateBoard(int rowCount, GameTile gameTile)
         {
-            CreateBoard();
-            Camera.main.transform.position = CalculateCenter();
-        }
-
-        public void CreateBoard()
-        {
+            this.RowCount = rowCount;
+            this._gameTile = gameTile;
+            
             for (int y = 0; y < RowCount; y++)
             {
                 int columnCount = GetColumnInRow(y);
@@ -38,7 +35,7 @@ namespace Sweeper.Board
                     column[x] = CreateTile(x + GetFirstColumnInRow(y), y);
                 }
 
-                GameBoard.Add(y, column);
+                _gameBoard.Add(y, column);
             }
         }
 
@@ -59,21 +56,26 @@ namespace Sweeper.Board
 
             return neighbourGameTiles.ToArray();
         }
-
-        private GameTile GetCell(int x, int y)
+        
+        public Vector3 CalculateCenter()
         {
-            if (PositionExists(x, y))
+            GameTile[] centerTiles =
+                _gameBoard.FirstOrDefault(x => x.Key == Mathf.FloorToInt(_gameBoard.Count / 2.0f)).Value;
+            GameTile centerTile = centerTiles[Mathf.FloorToInt(centerTiles.Length / 2.0f)];
+            return new Vector3(centerTile.transform.position.x, centerTile.transform.position.y, -10);
+        }
 
-                return GameBoard[y].ToList().Find(v => v.Col == x);
-
+        public GameTile GetCell(int x, int y)
+        {
+            if (PositionExists(x, y)) return _gameBoard[y].ToList().Find(v => v.Col == x);
             return null;
         }
 
         private bool PositionExists(int x, int y)
         {
-            if (y >= 0 && y < GameBoard.Count)
+            if (y >= 0 && y < _gameBoard.Count)
             {
-                List<GameTile> values = GameBoard[y].ToList();
+                List<GameTile> values = _gameBoard[y].ToList();
 
                 if (x >= values.Min(c => c.Col) && x <= values.Max(c => c.Col))
                 {
@@ -83,17 +85,9 @@ namespace Sweeper.Board
             return false;
         }
 
-        public Vector3 CalculateCenter()
-        {
-            GameTile[] centerTiles =
-                GameBoard.FirstOrDefault(x => x.Key == Mathf.FloorToInt(GameBoard.Count / 2.0f)).Value;
-            GameTile centerTile = centerTiles[Mathf.FloorToInt(centerTiles.Length / 2.0f)];
-            return new Vector3(centerTile.transform.position.x, centerTile.transform.position.y, -10);
-        }
-
         private GameTile CreateTile(int x, int y)
         {
-            GameTile tile = Instantiate(gameTile, CalculateHexPosition(x, y),
+            GameTile tile = Instantiate(_gameTile, CalculateHexPosition(x, y),
                 Quaternion.identity, transform);
             tile.Row = y;
             tile.Col = x;

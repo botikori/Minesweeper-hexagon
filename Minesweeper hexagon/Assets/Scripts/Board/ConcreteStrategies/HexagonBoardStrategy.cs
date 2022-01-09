@@ -4,12 +4,12 @@ namespace Sweeper.Board.ConcreteStrategies
 {
     public class HexagonBoardStrategy : BoardStrategy
     {
-        public override int GetColumnInRow(int row)
+        protected override int GetColumnInRow(int row)
         {
             return 2 * HalfRowCount + 1 - Mathf.Abs(HalfRowCount - row);
         }
 
-        public override int GetFirstColumnInRow(int row)
+        protected override int GetFirstColumnInRow(int row)
         {
             return HalfRowCount - row <= 0 ? 0 : HalfRowCount - row;
         }

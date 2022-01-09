@@ -2,12 +2,12 @@ namespace Sweeper.Board.ConcreteStrategies
 {
     public class UpTriangleBoardStrategy : BoardStrategy
     {
-        public override int GetColumnInRow(int row)
+        protected override int GetColumnInRow(int row)
         {
             return RowCount - row;
         }
 
-        public override int GetFirstColumnInRow(int row)
+        protected override int GetFirstColumnInRow(int row)
         {
             return 0;
         }

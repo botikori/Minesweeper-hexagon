@@ -19,6 +19,7 @@
             <e p="Direction.cs" t="Include" />
             <e p="MapCreator.cs" t="Include" />
           </e>
+          <e p="GameHandler.cs" t="Include" />
           <e p="Tile" t="Include">
             <e p="GameTile.cs" t="Include" />
             <e p="States" t="Include">
