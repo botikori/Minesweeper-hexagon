@@ -4,12 +4,12 @@ namespace Sweeper.Boards
     {
         public override int GetColumnInRow(int row)
         {
-            return row + 1;
+            return RowCount - row;
         }
 
         public override int GetFirstColumnInRow(int row)
         {
-            return RowCount - 1 + row;
+            return 0;
         }
     }
 }
