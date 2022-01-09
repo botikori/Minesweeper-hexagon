@@ -7,7 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Boards" t="Include">
+          <e p="Board" t="Include">
             <e p="BoardStrategy.cs" t="Include" />
             <e p="ConcreteStrategies" t="Include">
               <e p="DownTriangleBoardStrategy.cs" t="Include" />

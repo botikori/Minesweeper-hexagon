@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sweeper.Boards.ConcreteStrategies
+namespace Sweeper.Board.ConcreteStrategies
 {
     public class RectangleBoardStrategy : BoardStrategy
     {

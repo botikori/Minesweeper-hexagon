@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sweeper.Boards
+namespace Sweeper.Board
 {
     public class MapCreator : MonoBehaviour
     {

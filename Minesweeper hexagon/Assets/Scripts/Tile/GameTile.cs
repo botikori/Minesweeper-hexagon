@@ -31,6 +31,7 @@ namespace Sweeper.Tile
         private void Start()
         {
             SetState(EmptyState);
+            GetComponentInChildren<TextMesh>().text = $"{Row}; {Col}";
         }
 
         private void OnMouseDown()
