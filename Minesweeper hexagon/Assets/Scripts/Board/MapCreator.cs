@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using Sweeper.Tile;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Sweeper.Board
 {
@@ -8,6 +10,12 @@ namespace Sweeper.Board
         private BoardStrategy _gameBoard;
         private int _mineCount;
         private int _placedMines;
+        private List<Vector2Int> _placedMinePositions;
+
+        private void Awake()
+        {
+            _placedMinePositions = new List<Vector2Int>();
+        }
 
         public void CreateMap(int mineCount, BoardStrategy gameBoard)
         {
@@ -15,6 +23,11 @@ namespace Sweeper.Board
             this._mineCount = mineCount;
 
             CreateMines();
+
+            foreach (var minePosition in _placedMinePositions)
+            {
+                RaiseNumbers(minePosition.x, minePosition.y);
+            }
         }
 
         private void CreateMines()
@@ -25,12 +38,11 @@ namespace Sweeper.Board
                     Random.Range(0, _gameBoard.RowCount + 1));
                 GameTile currentTile = _gameBoard.GetCell(randomPos.x, randomPos.y);
 
-                if (currentTile != null && currentTile.CurrentState == currentTile.EmptyState)
+                if (currentTile != null && currentTile.CurrentState != currentTile.MineState)
                 {
                     currentTile.SetState(currentTile.MineState);
+                    _placedMinePositions.Add(randomPos);
                     _placedMines++;
-                    Debug.Log($"Mine added at: {randomPos.x}; {randomPos.y}");
-                    RaiseNumbers(randomPos.x, randomPos.y);
                 }
             }
         }
@@ -41,8 +53,8 @@ namespace Sweeper.Board
 
             foreach (var neighbour in neighbours)
             {
-                if (neighbour.CurrentState != neighbour.NumberState) neighbour.SetState(neighbour.NumberState);
-                neighbour.NumberState.Number++;
+                if (neighbour.CurrentState == neighbour.EmptyState) neighbour.SetState(neighbour.NumberState);
+                if (neighbour.CurrentState == neighbour.NumberState) neighbour.NumberState.Number++;
             }
         }
     }

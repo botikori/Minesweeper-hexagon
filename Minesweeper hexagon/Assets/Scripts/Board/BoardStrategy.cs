@@ -73,11 +73,9 @@ namespace Sweeper.Board
 
         public bool PositionExists(int x, int y)
         {
-            if (y >= 0 && y < _gameBoard.Count)
+            if (_gameBoard.Keys.ToList().Exists(v => v == y))
             {
-                List<GameTile> values = _gameBoard[y].ToList();
-
-                if (x >= values.Min(c => c.Col) && x <= values.Max(c => c.Col))
+                if (_gameBoard[y].ToList().Exists(v => v.Col == x))
                 {
                     return true;
                 }

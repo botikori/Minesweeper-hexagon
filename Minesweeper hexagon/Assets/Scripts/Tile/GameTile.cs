@@ -6,11 +6,11 @@ namespace Sweeper.Tile
 {
     public class GameTile : MonoBehaviour
     {
-        public IState CurrentState { get; set; }
+        public IState CurrentState { get; private set; }
 
-        public EmptyState EmptyState { get; set; }
-        public MineState MineState { get; set; }
-        public NumberState NumberState { get; set; }
+        public EmptyState EmptyState { get; private set; }
+        public MineState MineState { get; private set; }
+        public NumberState NumberState { get; private set; }
         
         public int Row { get; set; }
         public int Col { get; set; }
