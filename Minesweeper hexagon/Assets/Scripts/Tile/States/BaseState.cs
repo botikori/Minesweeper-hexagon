@@ -1,26 +1,32 @@
+using Sweeper.Board;
 using UnityEngine;
 
 namespace Sweeper.Tile.States
 {
     public abstract class BaseState : IState
     {
-        protected GameTile gameTile;
+        
         protected bool isFlagged = false;
         protected bool isQuestioned = false;
-        protected bool isRevealed = false;
+        
+        public bool IsRevealed { get; set; } = false;
+        
+        protected GameTile gameTile;
         protected SpriteRenderer spriteRenderer;
         protected TileSprites tileSprites;
-
-        public BaseState(GameTile gameTile, SpriteRenderer spriteRenderer, TileSprites tileSprites)
+        protected BoardStrategy gameBoard;
+        
+        public BaseState(GameTile gameTile, SpriteRenderer spriteRenderer, TileSprites tileSprites, BoardStrategy boardStrategy)
         {
             this.gameTile = gameTile;
             this.spriteRenderer = spriteRenderer;
             this.tileSprites = tileSprites;
+            this.gameBoard = boardStrategy;
         }
 
         public virtual void RightClick()
         {
-            if (!isRevealed)
+            if (!IsRevealed)
             {
                 Reveal();
                 return;
@@ -29,12 +35,12 @@ namespace Sweeper.Tile.States
 
         public virtual void Reveal()
         {
-            isRevealed = true;
+            IsRevealed = true;
         }
 
         public virtual void LeftClick()
         {
-            if (!isRevealed)
+            if (!IsRevealed)
             {
                 if (!isFlagged && !isQuestioned)
                 {

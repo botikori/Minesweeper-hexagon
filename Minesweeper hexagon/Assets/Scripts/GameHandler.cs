@@ -19,7 +19,7 @@ namespace Sweeper
             _boardStrategy.CreateBoard(11, gameTile);
             
             _mapCreator = boardPrefab.GetComponent<MapCreator>();
-            _mapCreator.CreateMap(50, _boardStrategy);
+            _mapCreator.CreateMap(5, _boardStrategy);
 
             GameTile[] gameTiles = FindObjectsOfType<GameTile>();
 
