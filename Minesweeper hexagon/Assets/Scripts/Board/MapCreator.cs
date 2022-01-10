@@ -34,14 +34,12 @@ namespace Sweeper.Board
         {
             while (_placedMines != _mineCount)
             {
-                Vector2Int randomPos = new Vector2Int(Random.Range(0, _gameBoard.RowCount + 1),
-                    Random.Range(0, _gameBoard.RowCount + 1));
-                GameTile currentTile = _gameBoard.GetCell(randomPos.x, randomPos.y);
+                GameTile randomTile = _gameBoard.AllTiles[Random.Range(0, _gameBoard.AllTiles.Count)];
 
-                if (currentTile != null && currentTile.CurrentState != currentTile.MineState)
+                if (randomTile.CurrentState != randomTile.MineState)
                 {
-                    currentTile.SetState(currentTile.MineState);
-                    _placedMinePositions.Add(randomPos);
+                    randomTile.SetState(randomTile.MineState);
+                    _placedMinePositions.Add(new Vector2Int(randomTile.Col, randomTile.Row));
                     _placedMines++;
                 }
             }

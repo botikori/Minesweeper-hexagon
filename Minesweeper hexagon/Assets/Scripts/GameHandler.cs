@@ -15,11 +15,11 @@ namespace Sweeper
         
         private void Start()
         {
-            _boardStrategy = boardPrefab.AddComponent<HexagonBoardStrategy>();
+            _boardStrategy = boardPrefab.AddComponent<RectangleBoardStrategy>();
             _boardStrategy.CreateBoard(11, gameTile);
             
             _mapCreator = boardPrefab.GetComponent<MapCreator>();
-            _mapCreator.CreateMap(40, _boardStrategy);
+            _mapCreator.CreateMap(50, _boardStrategy);
 
             GameTile[] gameTiles = FindObjectsOfType<GameTile>();
 

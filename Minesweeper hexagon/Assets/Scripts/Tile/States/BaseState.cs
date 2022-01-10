@@ -29,6 +29,7 @@ namespace Sweeper.Tile.States
 
         public virtual void Reveal()
         {
+            isRevealed = true;
         }
 
         public virtual void LeftClick()

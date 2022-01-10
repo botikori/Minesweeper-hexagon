@@ -12,6 +12,8 @@ namespace Sweeper.Tile.States
         {
             base.Reveal();
             spriteRenderer.sprite = tileSprites.RevealedEmpty;
+            
+            
         }
     }
 }

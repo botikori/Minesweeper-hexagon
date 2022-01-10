@@ -12,11 +12,14 @@ namespace Sweeper.Board
         
         public int RowCount { get; private set; } = 11;
 
+        public List<GameTile> AllTiles { get; private set; }
+
         protected abstract int GetColumnInRow(int row);
         protected abstract int GetFirstColumnInRow(int row);
 
         private void Awake()
         {
+            AllTiles = new List<GameTile>();
             _gameBoard = new Dictionary<int, GameTile[]>();
         }
 
@@ -89,6 +92,9 @@ namespace Sweeper.Board
                 Quaternion.identity, transform);
             tile.Row = y;
             tile.Col = x;
+            
+            AllTiles.Add(tile);
+            
             return tile;
         }
 

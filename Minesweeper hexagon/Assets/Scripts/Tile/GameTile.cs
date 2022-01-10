@@ -30,6 +30,16 @@ namespace Sweeper.Tile
             SetState(EmptyState);
         }
 
+        private void Start()
+        {
+            TextMesh textMesh = GetComponentInChildren<TextMesh>();
+            
+            if (textMesh != null)
+            {
+                textMesh.text = $"{Row}; {Col}";    
+            }
+        }
+
         private void OnMouseDown()
         {
             CurrentState.RightClick();
