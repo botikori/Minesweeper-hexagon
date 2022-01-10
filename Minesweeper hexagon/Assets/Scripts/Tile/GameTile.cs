@@ -40,7 +40,6 @@ namespace Sweeper.Tile
             if (newState != null)
             {
                 CurrentState = newState;
-                Debug.Log(newState);
             }
         }
     }
