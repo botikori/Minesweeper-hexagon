@@ -35,6 +35,27 @@ namespace Sweeper.Tile
             CurrentState.RightClick();
         }
 
+        private void Update()
+        {
+            DetectLeftClick();
+        }
+
+        private void DetectLeftClick()
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+                if (hit.collider != null)
+                {
+                    if (hit.collider.gameObject.GetInstanceID() == gameObject.GetInstanceID())
+                    {
+                        CurrentState.LeftClick();
+                    }
+                }
+            }
+        }
+
         public void SetState(IState newState)
         {
             if (newState != null)

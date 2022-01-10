@@ -22,11 +22,7 @@ namespace Sweeper
             _mapCreator.CreateMap(40, _boardStrategy);
 
             GameTile[] gameTiles = FindObjectsOfType<GameTile>();
-            foreach (var til in gameTiles)
-            {
-                til.CurrentState.Reveal();
-            }
-            
+
             Camera.main.transform.position = _boardStrategy.CalculateCenter();
         }
     }
