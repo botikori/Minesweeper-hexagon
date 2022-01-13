@@ -5,18 +5,18 @@ namespace Sweeper.Tile.States
 {
     public abstract class BaseState : IState
     {
-        
-        protected bool isFlagged = false;
-        protected bool isQuestioned = false;
-        
+        public bool IsFlagged { get; set; } = false;
+        public bool IsQuestioned { get; set; } = false;
+
         public bool IsRevealed { get; set; } = false;
-        
+
         protected GameTile gameTile;
         protected SpriteRenderer spriteRenderer;
         protected TileSprites tileSprites;
         protected BoardStrategy gameBoard;
-        
-        public BaseState(GameTile gameTile, SpriteRenderer spriteRenderer, TileSprites tileSprites, BoardStrategy boardStrategy)
+
+        public BaseState(GameTile gameTile, SpriteRenderer spriteRenderer, TileSprites tileSprites,
+            BoardStrategy boardStrategy)
         {
             this.gameTile = gameTile;
             this.spriteRenderer = spriteRenderer;
@@ -26,12 +26,14 @@ namespace Sweeper.Tile.States
 
         public virtual void RightClick()
         {
+            if (IsFlagged || IsQuestioned) return;
+            
             if (!IsRevealed)
             {
                 Reveal();
-                return;
             }
         }
+
 
         public virtual void Reveal()
         {
@@ -42,11 +44,11 @@ namespace Sweeper.Tile.States
         {
             if (!IsRevealed)
             {
-                if (!isFlagged && !isQuestioned)
+                if (!IsFlagged && !IsQuestioned)
                 {
                     FlagCell();
                 }
-                else if (isFlagged)
+                else if (IsFlagged)
                 {
                     QuestionCell();
                 }
@@ -59,20 +61,20 @@ namespace Sweeper.Tile.States
 
         private void FlagCell()
         {
-            isFlagged = true;
+            IsFlagged = true;
             spriteRenderer.sprite = tileSprites.UnrevealedFlag;
         }
 
         private void QuestionCell()
         {
-            isFlagged = false;
-            isQuestioned = true;
+            IsFlagged = false;
+            IsQuestioned = true;
             spriteRenderer.sprite = tileSprites.UnrevealedQuestion;
         }
 
         private void RemoveQuestion()
         {
-            isQuestioned = false;
+            IsQuestioned = false;
             spriteRenderer.sprite = tileSprites.Unrevealed;
         }
     }

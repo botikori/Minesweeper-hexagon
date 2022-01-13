@@ -11,7 +11,11 @@ namespace Sweeper.Tile.States
 
         public override void Reveal()
         {
+            if (IsFlagged || IsQuestioned) return;
+            if (IsRevealed) { return; }
+            
             base.Reveal();
+
             spriteRenderer.sprite = tileSprites.RevealedEmpty;
             RevealNeighbours();
         }
@@ -22,10 +26,7 @@ namespace Sweeper.Tile.States
 
             foreach (var neighbour in neighbours)
             {
-                if (!neighbour.CurrentState.IsRevealed)
-                {
-                    neighbour.CurrentState.Reveal();
-                }
+                neighbour.CurrentState.Reveal();
             }
         }
     }

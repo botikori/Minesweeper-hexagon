@@ -26,6 +26,7 @@
               <e p="BaseState.cs" t="Include" />
               <e p="EmptyState.cs" t="Include" />
               <e p="IState.cs" t="Include" />
+              <e p="MineRevealType.cs" t="Include" />
               <e p="MineState.cs" t="Include" />
               <e p="NumberState.cs" t="Include" />
             </e>
