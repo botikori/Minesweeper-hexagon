@@ -1917,3 +1917,443 @@ Resuming Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000
 Assertion failed on expression: 'state.state == kUpToDate'
 Assertion failed on expression: 'state.artifactID == result'
  -> (artifact id: '2b2925120118ad5fd8c48b7ad5675bfb') in 0,067351 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,004886 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/botikori/UnityProjects/Minesweeper-hexagon/Minesweeper hexagon/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/botikori/UnityProjects/Minesweeper-hexagon/Minesweeper hexagon/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,331 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1331ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1141ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (414ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (432ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (323ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3795 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139,0 MB.
+System memory in use after: 139,3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4398.
+Total: 6,766242 ms (FindLiveObjects: 0,325915 ms CreateObjectMapping: 0,181566 ms MarkObjects: 6,230520 ms  DeleteObjects: 0,026827 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,004490 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/botikori/UnityProjects/Minesweeper-hexagon/Minesweeper hexagon/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/botikori/UnityProjects/Minesweeper-hexagon/Minesweeper hexagon/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,343 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1343ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1152ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (421ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (439ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (331ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3795 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139,1 MB.
+System memory in use after: 139,3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4401.
+Total: 6,498507 ms (FindLiveObjects: 0,335634 ms CreateObjectMapping: 0,221760 ms MarkObjects: 5,919053 ms  DeleteObjects: 0,020730 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 491,632813 seconds.
+  path: Assets/Graphics/Fonts/mine-sweeper/mine-sweeper.ttf
+  artifactKey: Guid(7faeebbdddc58728cba63f128a7f0476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Fonts/mine-sweeper/mine-sweeper.ttf using Guid(7faeebbdddc58728cba63f128a7f0476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d76afa5959d2a4dbfc4fefea7eeb84') in 0,066794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25,341180 seconds.
+  path: Assets/Prefabs/UI/MenuComponents/Button.prefab
+  artifactKey: Guid(71ba732ded908cb3f968d1c9b5910a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/MenuComponents/Button.prefab using Guid(71ba732ded908cb3f968d1c9b5910a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141af43f46d69cf8df0593df01aa736e') in 0,029487 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,005013 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/botikori/UnityProjects/Minesweeper-hexagon/Minesweeper hexagon/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/botikori/UnityProjects/Minesweeper-hexagon/Minesweeper hexagon/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,389 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1389ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1192ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (440ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (448ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (333ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3796 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139,5 MB.
+System memory in use after: 139,8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4420.
+Total: 6,128722 ms (FindLiveObjects: 0,318471 ms CreateObjectMapping: 0,211924 ms MarkObjects: 5,565312 ms  DeleteObjects: 0,031800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 82,668783 seconds.
+  path: Assets/Prefabs/UI/MenuComponents/Header.prefab
+  artifactKey: Guid(55c47b10e6fa6010baba4675913d6d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/MenuComponents/Header.prefab using Guid(55c47b10e6fa6010baba4675913d6d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8cedebd87bbfafa6788b0b71e645bda') in 0,034129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8,916181 seconds.
+  path: Assets/Prefabs/UI/Main Menu.prefab
+  artifactKey: Guid(82694cc07b2c9106c85118a5fda08da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Main Menu.prefab using Guid(82694cc07b2c9106c85118a5fda08da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc00e00d8d2ebfaa9ff9270cb6d961f') in 0,019344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11,368331 seconds.
+  path: Assets/Prefabs/UI/Credits Menu.prefab
+  artifactKey: Guid(48ff603b931d58d0d81e4fe5c3ff0990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Credits Menu.prefab using Guid(48ff603b931d58d0d81e4fe5c3ff0990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e782f95e58908d664f0433ac436abd') in 0,002706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,536871 seconds.
+  path: Assets/Prefabs/Board/Tile.prefab
+  artifactKey: Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Board/Tile.prefab using Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_9>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_9&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Board/Tile.prefab from editor
+Resuming Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000000000000000) -> 39c51fef539e322347521c87326ae40b 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_9>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_9&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Requesting import of Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Board/Tile.prefab from editor
+Resuming Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000000000000000) -> 39c51fef539e322347521c87326ae40b 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '2b2925120118ad5fd8c48b7ad5675bfb') in 0,064569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 153,793175 seconds.
+  path: Assets/Prefabs/UI/Credits Menu.prefab
+  artifactKey: Guid(48ff603b931d58d0d81e4fe5c3ff0990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Credits Menu.prefab using Guid(48ff603b931d58d0d81e4fe5c3ff0990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e3db9c18cc5bfdcafa2f0311ccd5b6') in 0,013110 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,004316 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/botikori/UnityProjects/Minesweeper-hexagon/Minesweeper hexagon/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/botikori/UnityProjects/Minesweeper-hexagon/Minesweeper hexagon/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,203 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1203ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1033ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (373ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (393ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (294ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 3795 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139,5 MB.
+System memory in use after: 139,8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4423.
+Total: 6,005029 ms (FindLiveObjects: 0,279924 ms CreateObjectMapping: 0,167140 ms MarkObjects: 5,531186 ms  DeleteObjects: 0,025166 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 48,204843 seconds.
+  path: Assets/Prefabs/UI/Level Complete Menu.prefab
+  artifactKey: Guid(f13bb2be5ee25210694b1e7f943f32a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Level Complete Menu.prefab using Guid(f13bb2be5ee25210694b1e7f943f32a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733a716a8413fa9bcad9c700b62bd7a8') in 0,042259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 158,771279 seconds.
+  path: Assets/Prefabs/Board/Tile.prefab
+  artifactKey: Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Board/Tile.prefab using Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_9>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_9&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Board/Tile.prefab from editor
+Resuming Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000000000000000) -> 39c51fef539e322347521c87326ae40b 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_9>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_9&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Requesting import of Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Board/Tile.prefab from editor
+Resuming Guid(ab86e24c3bbb3dd639a26c6bfcec1c88) Importer(-1,00000000000000000000000000000000) -> 39c51fef539e322347521c87326ae40b 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '2b2925120118ad5fd8c48b7ad5675bfb') in 0,055668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,942840 seconds.
+  path: Assets/Prefabs/UI/Level Complete Menu.prefab
+  artifactKey: Guid(f13bb2be5ee25210694b1e7f943f32a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Level Complete Menu.prefab using Guid(f13bb2be5ee25210694b1e7f943f32a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6919b1f38ba9100b3681de874e8e55f7') in 0,016719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32,451097 seconds.
+  path: Assets/Prefabs/UI/Level Complete Menu 1.prefab
+  artifactKey: Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Level Complete Menu 1.prefab using Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af5afd787b4f92ca9363de7dc00978be') in 0,003782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17,132281 seconds.
+  path: Assets/Prefabs/UI/Death Menu.prefab
+  artifactKey: Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Death Menu.prefab using Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231ca983507c606a9c986511eb85d8c1') in 0,096652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26,192532 seconds.
+  path: Assets/Prefabs/UI/Death Menu.prefab
+  artifactKey: Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Death Menu.prefab using Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2d1132c7cc047093f5a19bff4c3e13') in 0,003103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14,732456 seconds.
+  path: Assets/Prefabs/UI/Death Menu.prefab
+  artifactKey: Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Death Menu.prefab using Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9918ed76d7d6933c7dd0ed535673f616') in 0,003333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,673055 seconds.
+  path: Assets/Prefabs/UI/Death Menu.prefab
+  artifactKey: Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Death Menu.prefab using Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432b7db2b1cb1aafa8768175d3214b63') in 0,003733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7,146442 seconds.
+  path: Assets/Prefabs/UI/Death Menu.prefab
+  artifactKey: Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Death Menu.prefab using Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a54212795cff7695d94cd6d93ce5db3') in 0,003467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,040495 seconds.
+  path: Assets/Prefabs/UI/Death Menu.prefab
+  artifactKey: Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Death Menu.prefab using Guid(d7b7db0f362d30d32ad1d1fee3c9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a535fd014724f411a08a93f055615393') in 0,003487 seconds 

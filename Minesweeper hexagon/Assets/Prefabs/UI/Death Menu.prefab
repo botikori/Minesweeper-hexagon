@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5520339279401830579}
   - component: {fileID: 7818203914906908625}
   m_Layer: 5
-  m_Name: Level Complete Menu
+  m_Name: Death Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7058824, g: 1, b: 0.6862745, a: 0.8627451}
+  m_Color: {r: 1, g: 0.28541896, b: 0.23113209, a: 0.8627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -441,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7149720045967403087, guid: 55c47b10e6fa6010baba4675913d6d21, type: 3}
       propertyPath: m_Text
-      value: game complete!
+      value: mine exploded!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c47b10e6fa6010baba4675913d6d21, type: 3}
