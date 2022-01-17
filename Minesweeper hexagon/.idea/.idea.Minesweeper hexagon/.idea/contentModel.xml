@@ -20,6 +20,11 @@
               <e p="Direction.cs" t="Include" />
               <e p="MapCreator.cs" t="Include" />
             </e>
+            <e p="Data" t="Include">
+              <e p="DataManager.cs" t="Include" />
+              <e p="JsonSaver.cs" t="Include" />
+              <e p="SaveData.cs" t="Include" />
+            </e>
             <e p="GameHandler.cs" t="Include" />
             <e p="Tile" t="Include">
               <e p="GameTile.cs" t="Include" />
@@ -32,6 +37,24 @@
                 <e p="NumberState.cs" t="Include" />
               </e>
               <e p="TileSprites.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="CustomMenus" t="Include">
+              <e p="CreditsMenu.cs" t="Include" />
+              <e p="GameMenu.cs" t="Include" />
+              <e p="LevelCompleteMenu.cs" t="Include" />
+              <e p="MainMenu.cs" t="Include" />
+              <e p="PauseMenu.cs" t="Include" />
+              <e p="SettingsMenu.cs" t="Include" />
+            </e>
+            <e p="LevelLoader.cs" t="Include" />
+            <e p="Menu.cs" t="Include" />
+            <e p="MenuManager.cs" t="Include" />
+            <e p="Utilities" t="Include">
+              <e p="DontDestroyOnLoad.cs" t="Include" />
+              <e p="ScreenFader.cs" t="Include" />
+              <e p="TransitionFader.cs" t="Include" />
             </e>
           </e>
         </e>
