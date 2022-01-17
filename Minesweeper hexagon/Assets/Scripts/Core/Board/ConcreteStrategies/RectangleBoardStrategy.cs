@@ -1,6 +1,8 @@
-namespace Sweeper.Board.ConcreteStrategies
+using UnityEngine;
+
+namespace Sweeper.Core.Board.ConcreteStrategies
 {
-    public class RhombusBoardStrategy : BoardStrategy
+    public class RectangleBoardStrategy : BoardStrategy
     {
         protected override int GetColumnInRow(int row)
         {
@@ -9,7 +11,7 @@ namespace Sweeper.Board.ConcreteStrategies
 
         protected override int GetFirstColumnInRow(int row)
         {
-            return 0;
+            return Mathf.FloorToInt(row / 2.0f) * -1;
         }
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sweeper.Board.ConcreteStrategies
+namespace Sweeper.Core.Board.ConcreteStrategies
 {
     public class HexagonBoardStrategy : BoardStrategy
     {

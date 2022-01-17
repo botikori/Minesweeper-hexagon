@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sweeper.Board
+namespace Sweeper.Core.Board
 {
     public static class Direction
     {

@@ -1,7 +1,7 @@
-using Sweeper.Board;
+using Sweeper.Core.Board;
 using UnityEngine;
 
-namespace Sweeper.Tile.States
+namespace Sweeper.Core.Tile.States
 {
     public class NumberState : BaseState
     {

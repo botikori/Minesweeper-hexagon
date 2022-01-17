@@ -1,11 +1,10 @@
-using System;
-using Sweeper.Board;
-using Sweeper.Board.ConcreteStrategies;
-using Sweeper.Tile;
-using Sweeper.Tile.States;
+using Sweeper.Core.Board;
+using Sweeper.Core.Board.ConcreteStrategies;
+using Sweeper.Core.Tile;
+using Sweeper.Core.Tile.States;
 using UnityEngine;
 
-namespace Sweeper
+namespace Sweeper.Core
 {
     public class GameHandler : MonoBehaviour
     {
@@ -14,9 +13,7 @@ namespace Sweeper
 
         private BoardStrategy _boardStrategy;
         private MapCreator _mapCreator;
-        
-        
-        
+
         private void Start()
         {
             _boardStrategy = boardPrefab.AddComponent<HexagonBoardStrategy>();

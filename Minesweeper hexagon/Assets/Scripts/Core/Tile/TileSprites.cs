@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sweeper
+namespace Sweeper.Core.Tile
 {
     public class TileSprites : MonoBehaviour
     {

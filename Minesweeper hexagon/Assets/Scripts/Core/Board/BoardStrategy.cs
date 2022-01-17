@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Sweeper.Tile;
+using Sweeper.Core.Tile;
 using UnityEngine;
 
-namespace Sweeper.Board
+namespace Sweeper.Core.Board
 {
     public abstract class BoardStrategy : MonoBehaviour
     {

@@ -7,30 +7,32 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Board" t="Include">
-            <e p="BoardStrategy.cs" t="Include" />
-            <e p="ConcreteStrategies" t="Include">
-              <e p="DownTriangleBoardStrategy.cs" t="Include" />
-              <e p="HexagonBoardStrategy.cs" t="Include" />
-              <e p="RectangleBoardStrategy.cs" t="Include" />
-              <e p="RhombusBoardStrategy.cs" t="Include" />
-              <e p="UpTriangleBoardStrategy.cs" t="Include" />
+          <e p="Core" t="Include">
+            <e p="Board" t="Include">
+              <e p="BoardStrategy.cs" t="Include" />
+              <e p="ConcreteStrategies" t="Include">
+                <e p="DownTriangleBoardStrategy.cs" t="Include" />
+                <e p="HexagonBoardStrategy.cs" t="Include" />
+                <e p="RectangleBoardStrategy.cs" t="Include" />
+                <e p="RhombusBoardStrategy.cs" t="Include" />
+                <e p="UpTriangleBoardStrategy.cs" t="Include" />
+              </e>
+              <e p="Direction.cs" t="Include" />
+              <e p="MapCreator.cs" t="Include" />
             </e>
-            <e p="Direction.cs" t="Include" />
-            <e p="MapCreator.cs" t="Include" />
-          </e>
-          <e p="GameHandler.cs" t="Include" />
-          <e p="Tile" t="Include">
-            <e p="GameTile.cs" t="Include" />
-            <e p="States" t="Include">
-              <e p="BaseState.cs" t="Include" />
-              <e p="EmptyState.cs" t="Include" />
-              <e p="IState.cs" t="Include" />
-              <e p="MineRevealType.cs" t="Include" />
-              <e p="MineState.cs" t="Include" />
-              <e p="NumberState.cs" t="Include" />
+            <e p="GameHandler.cs" t="Include" />
+            <e p="Tile" t="Include">
+              <e p="GameTile.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="BaseState.cs" t="Include" />
+                <e p="EmptyState.cs" t="Include" />
+                <e p="IState.cs" t="Include" />
+                <e p="MineRevealType.cs" t="Include" />
+                <e p="MineState.cs" t="Include" />
+                <e p="NumberState.cs" t="Include" />
+              </e>
+              <e p="TileSprites.cs" t="Include" />
             </e>
-            <e p="TileSprites.cs" t="Include" />
           </e>
         </e>
       </e>

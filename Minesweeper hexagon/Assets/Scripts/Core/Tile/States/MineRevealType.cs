@@ -1,4 +1,4 @@
-namespace Sweeper.Tile.States
+namespace Sweeper.Core.Tile.States
 {
     public enum MineRevealType
     {

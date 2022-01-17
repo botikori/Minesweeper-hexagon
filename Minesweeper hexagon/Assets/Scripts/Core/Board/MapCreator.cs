@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Sweeper.Tile;
+using Sweeper.Core.Tile;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Sweeper.Board
+namespace Sweeper.Core.Board
 {
     public class MapCreator : MonoBehaviour
     {

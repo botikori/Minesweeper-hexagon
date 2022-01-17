@@ -1,8 +1,8 @@
-using Sweeper.Board;
+using Sweeper.Core.Board;
+using Sweeper.Core.Tile.States;
 using UnityEngine;
-using Sweeper.Tile.States;
 
-namespace Sweeper.Tile
+namespace Sweeper.Core.Tile
 {
     public class GameTile : MonoBehaviour
     {
