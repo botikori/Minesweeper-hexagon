@@ -34,7 +34,6 @@ namespace Sweeper.Core.Tile.States
             
             if (HasEnoughFlaggedNeighbours(neighbours))
             {
-                Debug.Log("has enough flags around it");
                 foreach (var neighbour in neighbours)
                 {
                     if (!neighbour.CurrentState.IsFlagged && !neighbour.CurrentState.IsQuestioned)
@@ -61,7 +60,6 @@ namespace Sweeper.Core.Tile.States
                     flaggedNeighbours++;
                 }
             }
-            Debug.Log(flaggedNeighbours);
 
             if (flaggedNeighbours == Number) return true;
             return false;

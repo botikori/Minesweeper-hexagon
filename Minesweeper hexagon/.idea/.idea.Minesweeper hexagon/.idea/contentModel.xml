@@ -53,8 +53,6 @@
             <e p="MenuManager.cs" t="Include" />
             <e p="Utilities" t="Include">
               <e p="DontDestroyOnLoad.cs" t="Include" />
-              <e p="ScreenFader.cs" t="Include" />
-              <e p="TransitionFader.cs" t="Include" />
             </e>
           </e>
         </e>

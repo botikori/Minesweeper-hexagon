@@ -26,7 +26,6 @@ namespace Sweeper.Core.Data
 
         public bool Load(SaveData saveData)
         {
-
             if (File.Exists(GetSavePath()))
             {
                 using (StreamReader reader = new  StreamReader(GetSavePath()))

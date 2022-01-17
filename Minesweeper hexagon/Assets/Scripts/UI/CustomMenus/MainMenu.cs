@@ -7,8 +7,7 @@ namespace Sweeper.UI.CustomMenus
     public class MainMenu : Menu<MainMenu>
     {
         [SerializeField] private float loadGameDelay = 0.5f;
-        [SerializeField] private TransitionFader transitionFader;
-        
+
         public void OnPlayPressed()
         {
             StartCoroutine(OnPlayPressedRoutine());
@@ -16,7 +15,6 @@ namespace Sweeper.UI.CustomMenus
 
         private IEnumerator OnPlayPressedRoutine()
         {
-            TransitionFader.PlayTransition(transitionFader);
             LevelLoader.LoadNextLevel();
             yield return new WaitForSeconds(loadGameDelay);
             GameMenu.Open();

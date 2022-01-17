@@ -5,8 +5,6 @@ namespace Sweeper.Core.Data
     [Serializable]
     public class SaveData
     {
-        private string _playerName;
-
         public float MusicVolume;
         public float SoundEffectsVolume;
         

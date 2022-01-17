@@ -5,8 +5,6 @@ namespace Sweeper.UI.CustomMenus
 {
     public class LevelCompleteMenu : Menu<LevelCompleteMenu>
     {
-        [SerializeField] private TransitionFader transitionFader;
-
         public void OnNextLevelPressed()
         {
             base.OnBackPressed();
