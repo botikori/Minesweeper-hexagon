@@ -6,6 +6,19 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="DOTween" t="Include">
+          <e p="Modules" t="Include">
+            <e p="DOTweenModuleAudio.cs" t="Include" />
+            <e p="DOTweenModuleEPOOutline.cs" t="Include" />
+            <e p="DOTweenModulePhysics.cs" t="Include" />
+            <e p="DOTweenModulePhysics2D.cs" t="Include" />
+            <e p="DOTweenModuleSprite.cs" t="Include" />
+            <e p="DOTweenModuleUI.cs" t="Include" />
+            <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+            <e p="DOTweenModuleUtils.cs" t="Include" />
+          </e>
+          <e p="readme.txt" t="Include" />
+        </e>
         <e p="Graphics" t="Include">
           <e p="Fonts" t="Include">
             <e p="mine-sweeper" t="Include">
@@ -35,6 +48,7 @@
             </e>
             <e p="GameHandler.cs" t="Include" />
             <e p="LevelLoader.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
             <e p="Tile" t="Include">
               <e p="GameTile.cs" t="Include" />
               <e p="States" t="Include">
@@ -59,6 +73,7 @@
             </e>
             <e p="Menu.cs" t="Include" />
             <e p="MenuManager.cs" t="Include" />
+            <e p="ScreenFade.cs" t="Include" />
             <e p="Utilities" t="Include">
               <e p="DontDestroyOnLoad.cs" t="Include" />
             </e>
