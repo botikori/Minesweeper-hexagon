@@ -162,7 +162,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
-  m_BlocksRaycasts: 0
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!1 &5193820115815139291
 GameObject:
@@ -357,9 +357,25 @@ PrefabInstance:
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8723081512621192678}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPlayPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Sweeper.UI.CustomMenus.MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5322511170895211182, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -572,6 +588,18 @@ PrefabInstance:
       propertyPath: m_Text
       value: Credits
       objectReference: {fileID: 0}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8723081512621192678}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnCreditsPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Sweeper.UI.CustomMenus.MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5322511170895211182, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -677,6 +705,18 @@ PrefabInstance:
     - target: {fileID: 5322511170534133208, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
       propertyPath: m_Text
       value: Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8723081512621192678}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSettingsPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322511170895211177, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Sweeper.UI.CustomMenus.MainMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5322511170895211182, guid: 71ba732ded908cb3f968d1c9b5910a00, type: 3}
       propertyPath: m_Pivot.x

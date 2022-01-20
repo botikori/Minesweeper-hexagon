@@ -1,5 +1,5 @@
 using System.Collections;
-using Sweeper.UI.Utilities;
+using Sweeper.Core;
 using UnityEngine;
 
 namespace Sweeper.UI.CustomMenus
@@ -10,13 +10,7 @@ namespace Sweeper.UI.CustomMenus
 
         public void OnPlayPressed()
         {
-            StartCoroutine(OnPlayPressedRoutine());
-        }
-
-        private IEnumerator OnPlayPressedRoutine()
-        {
             LevelLoader.LoadNextLevel();
-            yield return new WaitForSeconds(loadGameDelay);
             GameMenu.Open();
         }
 

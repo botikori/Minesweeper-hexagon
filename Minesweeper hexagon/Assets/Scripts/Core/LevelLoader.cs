@@ -2,7 +2,7 @@ using Sweeper.UI.CustomMenus;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Sweeper.UI
+namespace Sweeper.Core
 {
     public static class LevelLoader
     {
