@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using Sweeper.Core.Tile;
+using Sweeper.Core.Tile.States;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,14 +9,26 @@ namespace Sweeper.Core.Board
 {
     public class MapCreator : MonoBehaviour
     {
+        public static event Action AllFlagged;
+        
         private BoardStrategy _gameBoard;
         private int _mineCount;
         private int _placedMines;
         private List<Vector2Int> _placedMinePositions;
-
+        
         private void Awake()
         {
             _placedMinePositions = new List<Vector2Int>();
+        }
+
+        private void Start()
+        {
+            MineState.BombFlagged += CheckFlaggedCells;
+        }
+
+        private void OnDestroy()
+        {
+            MineState.BombExploded -= CheckFlaggedCells;
         }
 
         public void CreateMap(int mineCount, BoardStrategy gameBoard)
@@ -43,6 +57,21 @@ namespace Sweeper.Core.Board
                     _placedMines++;
                 }
             }
+        }
+
+        private void CheckFlaggedCells()
+        {
+            foreach (var minePosition in _placedMinePositions)
+            {
+                GameTile currentTile = _gameBoard.GetCell(minePosition.x, minePosition.y);
+
+                if (!currentTile.CurrentState.IsFlagged)
+                {
+                    return;
+                }
+            }
+            
+            AllFlagged?.Invoke();
         }
 
         private void RaiseNumbers(int x, int y)

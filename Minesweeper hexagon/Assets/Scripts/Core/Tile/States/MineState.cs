@@ -7,12 +7,19 @@ namespace Sweeper.Core.Tile.States
     public class MineState : BaseState
     {
         public static event Action BombExploded;
+        public static event Action BombFlagged;
 
         public MineRevealType MineRevealType { get; set; } = MineRevealType.Default;
         
         public MineState(GameTile gameTile, SpriteRenderer spriteRenderer, TileSprites tileSprites,
             BoardStrategy boardStrategy) : base(gameTile, spriteRenderer, tileSprites, boardStrategy)
         {
+        }
+
+        public override void LeftClick()
+        {
+            base.LeftClick();
+            BombFlagged?.Invoke();
         }
 
         public override void RightClick()

@@ -25,6 +25,7 @@ namespace Sweeper.Core
             GameTile[] gameTiles = FindObjectsOfType<GameTile>();
 
             MineState.BombExploded += GameOver;
+            MapCreator.AllFlagged += GameWon;
             
             Camera.main.transform.position = _boardStrategy.CalculateCenter();
         }
@@ -32,14 +33,25 @@ namespace Sweeper.Core
         private void OnDestroy()
         {
             MineState.BombExploded -= GameOver;
+            MapCreator.AllFlagged -= GameWon;
         }
 
         private void GameOver()
         {
+              RevealAll();
+        }
+
+        private void GameWon()
+        {
+            RevealAll();
+        }
+
+        private void RevealAll()
+        {
             foreach (var cell in _boardStrategy.AllTiles)
             {
                 cell.CurrentState.Reveal();
-            }    
+            }
         }
     }
 }

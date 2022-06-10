@@ -65,6 +65,7 @@
           <e p="UI" t="Include">
             <e p="CustomMenus" t="Include">
               <e p="CreditsMenu.cs" t="Include" />
+              <e p="DeathMenu.cs" t="Include" />
               <e p="GameMenu.cs" t="Include" />
               <e p="LevelCompleteMenu.cs" t="Include" />
               <e p="MainMenu.cs" t="Include" />

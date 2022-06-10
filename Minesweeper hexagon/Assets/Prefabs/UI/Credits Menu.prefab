@@ -80,7 +80,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'creator of the game
 
-    * botikori *'
+    botikori'
 --- !u!1 &7233733595973840704
 GameObject:
   m_ObjectHideFlags: 0
